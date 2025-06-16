@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,700;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://static-00.iconduck.com/assets.00/calculator-icon-2042x2048-8mv9eopl.png">
+</head>
+<body>
+    <div id="calculator-container">
+        <div>
+            <button id="clearButton">C</button>
+            <input id="display" readonly>
+        </div>
+
+        <div id="keys">
+            <button id="sevenButton" onclick="appendToDisplay('7')" class="numberButton">7</button>
+            <button id="eightButton" onclick="appendToDisplay('8')" class="numberButton">8</button>
+            <button id="nineButton" onclick="appendToDisplay('9')" class="numberButton">9</button>
+            <button id="divisionButton" onclick="appendToDisplay('/')">/</button>
+            <button id="fourButton" onclick="appendToDisplay('4')" class="numberButton">4</button>
+            <button id="fiveButton" onclick="appendToDisplay('5')" class="numberButton">5</button>
+            <button id="sixButton" onclick="appendToDisplay('6')" class="numberButton">6</button>
+            <button id="multiplicatonButton" onclick="appendToDisplay('*')">*</button>
+            <button id="oneButton" onclick="appendToDisplay('1')" class="numberButton">1</button>
+            <button id="twoButton" onclick="appendToDisplay('2')" class="numberButton">2</button>
+            <button id="threeButton" onclick="appendToDisplay('3')" class="numberButton">3</button>
+            <button id="subtractionButton" onclick="appendToDisplay('-')">-</button>
+            <button id="zeroButton" onclick="appendToDisplay('0')" class="numberButton">0</button>
+            <button id="dotButton" onclick="appendToDisplay('.')">.</button>
+            <button id="equalsButton" onclick="calculate()">=</button>
+            <button id="additionButton" onclick="appendToDisplay('+')">+</button>
+        </div>
+    </div>
+</body>
+</html>
